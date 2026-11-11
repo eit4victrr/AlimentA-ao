@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlimentAção</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <a class="logo" href="#inicio" aria-label="Página inicial">
+            <img src="favicon.ico" alt="" class="logo-icon">
+        </a>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Problema</a>
+            <a href="#dicas">Dicas</a>
+            <a href="#calculadora">Calculadora</a>
+        </nav>
+
+        <div class="acessibilidade">
+            <button id="diminuirFonte">a-</button>
+            <button id="aumentarFonte">A+</button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="inicio" id="inicio">
+
+            <div class="inicio-texto">
+
+                <p class="etiqueta">CONSUMO CONSCIENTE · ODS 12</p>
+
+                <h1>
+                    Menos desperdício.
+                    <br>
+                    <span>Mais consciência.</span>
+                </h1>
+
+                <p>
+                    Pequenas atitudes podem transformar
+                    o mundo.
+                </p>
+
+                <a class="botao" href="#sobre">
+                    Conheça o nosso projeto: AlimentAção
+                </a>
+
+            </div>
+
+            <div class="destaque">
+    <img src="Ícone de Maçã Sustentável Circular.png" alt="Maçã">
+</div>
+
+        </section>
+
+        <section class="sobre secao" id="sobre">
+
+            <p class="etiqueta">01 / Problematização</p>
+
+            <h2>Por que evitar o desperdício?</h2>
+
+            <p>
+                O desperdício de alimentos é um problema
+                que afeta diretamente o meio ambiente e a sociedade.
+                Quando jogamos comida fora, também
+                desperdiçamos água, energia, trabalho e
+                outros recursos usados na produção.
+            </p>
+
+            <p>
+                O projeto DesperdícioZero busca incentivar escolhas
+                mais conscientes no dia a dia, começando
+                por atitudes simples dentro de casa e na escola.
+            </p>
+
+        </section>
+
+        <section class="secao" id="dicas">
+
+            <p class="etiqueta">02 / Pequenas atitudes</p>
+
+            <h2>Como podemos mudar o futuro?</h2>
+
+            <div class="cartoes">
+
+                <article class="cartao">
+                    <span class="numero">01</span>
+                    <h3>Planeje as suas compras</h3>
+                    <p>
+                        Confira o que já tem em casa
+                        e compre apenas o que for necessário.
+                    </p>
+                </article>
+
+                <article class="cartao">
+                    <span class="numero">02</span>
+                    <h3>Armazene-os corretamente</h3>
+                    <p>
+                        Guarde cada alimento de maneira
+                        correta para conservá-lo.
+                    </p>
+                </article>
+
+                <article class="cartao">
+                    <span class="numero">03</span>
+                    <h3>Reaproveite alimentos</h3>
+                    <p>
+                        Utilize sobras em novas preparações,
+                        quando estiverem em boas condições para consumo.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="dica-do-dia">
+
+                <div>
+                    <p class="etiqueta">Dicas 😁</p>
+
+                    <p id="textoDica">
+                        Organize os alimentos por validade
+                        e deixe os que vencem primeiro mais visíveis.
+                    </p>
+                </div>
+
+                <button class="botao botao-claro" id="novaDica">
+                    Outra dica
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="calculadora secao" id="calculadora">
+
+            <p class="etiqueta">03 / Calcule aqui:</p>
+
+            <h2>Quanto alimento é desperdiçado?</h2>
+
+            <p>
+                Informe uma estimativa de
+                alimentos descartados na sua casa por semana.
+            </p>
+
+            <div class="calculadora-conteudo">
+
+                <label for="quantidade">
+                    Quantidade por semana (em quilogramas)
+                </label>
+
+                <input id="quantidade" type="number" min="0" max="500" step="0.1" placeholder="Ex.: 1,5">
+
+                <button class="botao" id="calcular">
+                    Calcular
+                </button>
+
+                <p id="resultado" class="resultado">
+                    O resultado aparecerá aqui.
+                </p>
+
+                <h4>
+                    Estimativa: 4 semanas por mês e
+                    52 semanas por ano.
+                </h4>
+
+            </div>
+
+        </section>
+
+        <section class="quiz secao" id="quiz">
+
+            <p class="etiqueta">04 / Quiz - Teste-se</p>
+
+            <h2>Você sabe evitar o desperdício?</h2>
+
+            <p>
+                O que ajuda a evitar compras desnecessárias?
+            </p>
+
+            <div class="opcoes">
+
+                <button class="opcao" data-correta="false">
+                    Comprar sem verificar a despensa.
+                </button>
+
+                <button class="opcao" data-correta="true">
+                    Planejar as compras antes de sair.
+                </button>
+
+                <button class="opcao" data-correta="false">
+                    Comprar sempre em grandes quantidades.
+                </button>
+
+            </div>
+
+            <p id="feedback"></p>
+
+        </section>
+
+        <section class="ods">
+
+            <div class="ods-numero">12</div>
+
+            <div>
+                <p class="etiqueta">
+                    OBJETIVO DE DESENVOLVIMENTO SUSTENTÁVEL
+                </p>
+
+                <h2>Consumo e produção responsáveis</h2>
+
+                <p>
+                    O projeto se relaciona ao ODS 12 da ONU,
+                    que incentiva padrões de consumo e produção
+                    mais sustentáveis. Reduzir o desperdício
+                    de alimentos é uma forma de contribuir
+                    com esse objetivo.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <a class="logo" href="#inicio">
+            Aliment<span>Ação</span>
+        </a>
+
+        <p>
+            Pequenas escolhas. Menos desperdício.
+        </p>
+
+        <a href="#inicio">Voltar ↑</a>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
